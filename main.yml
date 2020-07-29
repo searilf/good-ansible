@@ -1,6 +1,8 @@
 ---
 
-- hosts: workstation
+- name: Import In-memory inventory play
+  import_playbook: in-memory-inventory.yml
+  hosts: workstation
   gather_facts: true
   roles:
     - osp-facts
